@@ -1,0 +1,5 @@
+include 'foo:common'
+include 'foo:js'
+include 'foo:jvm'
+include 'foo:kotlin2js'
+include 'foo:kotlin'

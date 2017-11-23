@@ -1,0 +1,16 @@
+apply plugin: 'kotlin-platform-jvm'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "$kotlinEapRepo"
+    }
+    maven {
+        url "https://dl.bintray.com/kotlin/kotlin-eap"
+    }
+}
+
+dependencies {
+    expectedBy project(':foo:common')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+}
